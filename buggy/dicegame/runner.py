@@ -50,7 +50,8 @@ class GameRunner:
             if c == 6:
                 print("You won... Congrats...")
                 print("The fact it took you so long is pretty sad")
-                break
+                print("Thanks for playing")
+                exit()
 
             prompt = input("Would you like to play again?[y/n]: ")
 
