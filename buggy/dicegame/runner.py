@@ -31,8 +31,15 @@ class GameRunner:
             for die in runner.dice:
                 print(die.show())
 
-            guess = input("Sigh. What is your guess?: ")
-            guess = int(guess)
+            while True:
+                guess = input("Sigh. What is your guess?: ")
+                try:
+                    guess = int(guess)
+                    break
+                except ValueError:
+                        print("Please, write a number, it is not that difficult...")
+                        continue
+                        
 
             if guess == runner.answer():
                 print("Congrats, you can add like a 5 year old...")
