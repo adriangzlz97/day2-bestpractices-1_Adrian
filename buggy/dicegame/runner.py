@@ -23,9 +23,9 @@ class GameRunner:
         # Probably counts wins or something.
         # Great variable name, 10/10.
         c = 0
+        runner = cls()
         while True:
-            runner = cls()
-
+            runner.dice = Die.create_dice(5)
             print("Round {}\n".format(runner.round))
 
             for die in runner.dice:
