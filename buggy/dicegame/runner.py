@@ -54,7 +54,10 @@ class GameRunner:
 
             prompt = input("Would you like to play again?[y/n]: ")
 
-            if prompt == 'y' or prompt == 'n':
+            if prompt == 'y':
                 continue
+            if prompt == 'n':
+                print("Thank you for playing, dummy")
+                exit()
             else:
                 i_just_throw_an_exception()
