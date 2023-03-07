@@ -5,6 +5,7 @@ class GameRunner:
 
     def __init__(self):
         self.dice = Die.create_dice(5)
+        self.reset()
 
     def reset(self):
         self.round = 1
@@ -21,9 +22,8 @@ class GameRunner:
     def run(cls):
         # Probably counts wins or something.
         # Great variable name, 10/10.
-        runner = cls()
-        runner.reset()
         while True:
+            runner = cls()
 
             print("Round {}\n".format(runner.round))
 
