@@ -53,10 +53,12 @@ In this section, you should get more familiar with code profiling, in particular
 
 #### a. Investigate the performance of the ```matmult.py``` script
 In which line(s) of the script would you start optimizing for speed?
-
+Lines 31-32
 #### b. Investigate the performance of the ```euler72.py``` script
 In which line(s) of the script would you start optimizing for speed?
 (This is one problem from the euler project: [https://projecteuler.net/problem=72](https://projecteuler.net/problem=72))
+Line 52
 
 #### c. Improve the performance of the ```matmult.py``` script
 What is the best performance that you achieved with N=250?
+By using numpy, it went from 3.63s to 8.1 ms!
