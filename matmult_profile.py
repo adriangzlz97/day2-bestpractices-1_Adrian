@@ -4,6 +4,7 @@ import random
 N = 250
 
 # NxN matrix
+@profile
 def create_matrix1(N):
     X = []
     for i in range(N):
@@ -11,6 +12,7 @@ def create_matrix1(N):
     return(X)
 
 # Nx(N+1) matrix
+@profile
 def create_matrix2(N):
     Y = []
     for i in range(N):
@@ -18,6 +20,7 @@ def create_matrix2(N):
     return(Y)
 
 # result is Nx(N+1)
+@profile
 def multiply_matrix(N,X,Y):
     result = []
     for i in range(N):
